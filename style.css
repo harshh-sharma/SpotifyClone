@@ -14,6 +14,7 @@ body{
 
 .container{
    background-color: black;
+   height: 100vh;
 }
 
 .left{
@@ -84,7 +85,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(34,34,34);
+    background-color: rgb(17, 17, 17);
+    border-radius: 5px;
 }
 
 .right img{
@@ -96,16 +98,18 @@ body{
 }
 
 .spotifyPlaylists{
-    padding: 16px;
+    padding: 16px 16px;
 }
 
 .cardContainer{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    margin: 30px;
-    max-height: 70vh;
+    margin: 30px 0px;
+    max-height: 68vh;
     overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
 }
 
 .card{
@@ -139,7 +143,7 @@ body{
     background-color: #00ff00;
     border-radius: 50%;
     position: absolute;
-    bottom: -5px;
+    bottom: -4px;
     right: 6px;
     display: flex;
     align-items: center;
@@ -193,7 +197,7 @@ body{
     bottom: 0;
     /* background-image: linear-gradient(to right,#0fae0f,rgb(0, 123, 4)); */
     background-color: transparent;
-    border: 2px solid #00ff00;
+    /* border: 2px solid #00ff00; */
     width: 100%;
     /* padding: 12px; */
     display: flex;
@@ -258,7 +262,7 @@ body{
 }
 
 .seekbar{
-    width: 99%;
+    width: 98%;
     height: 4px;
     background-color: #00ff00;
     z-index: 1000;
@@ -268,6 +272,7 @@ body{
     align-items: center;
     bottom: 6px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .circle {
@@ -275,8 +280,73 @@ body{
     height: 12px;
     border-radius: 50%;
     background-color: white;
-    position: relative;
-    bottom: 0px;
+    position: absolute;
+    bottom: -5px;
     transition: left 0.5s;
-    left: 8%;
+    left: 0;
+}
+
+.playBar img {
+    cursor: pointer;
+    height: 23px;
+}
+
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0px 20px; */
+    align-items: center;
+    height: 40px;
+    /* padding: 0px 10px; */
+    color: wheat;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    border-bottom: none;
+    background-color: rgb(26, 26, 26);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.songinfo {
+    color: whitesmoke;
+    font-size: 18px;
+}
+.songtime {
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.right{
+    margin: 0px 10px;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.nav div{
+    display: flex;
+    gap: 5px;
+}
+
+@media (max-width:1140px) {
+    .left{
+        background: red;
+        position: absolute;
+        left: -100%;
+        transition: all 1s;
+        z-index: 3;
+    }
+    .right{
+        width: 100vw;
+    }
+
+    .menu-btn{
+        display: block;
+        height: 30px;
+        width: 100%;
+        cursor: pointer;
+    }
 }

@@ -8,10 +8,13 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container flex">
+    <div class="container bg-black flex">
       <div class="left bg-black">
         <div class="home rounded m-1 p-1 .grey">
+            <div class="cross-container">
           <div class="logo"><img class="invert" src="./assets/logo.svg" alt="" /></div>
+          <div class="cross"><img class="invert" src="./assets/cross.png" alt=""></div>
+        </div>
           <ul class="">
             <li><img class="invert" src="./assets/home.svg"/>Home</li>
             <li><img class="invert search" src="./assets/search.svg" />Search</li>
@@ -45,8 +48,8 @@
             <div class="nav">
                 <div>
                 <img class="menu-btn invert" src="./assets/menu.png" alt="">
-                <img class="invert" src="./assets/left-arrow.png" alt="">
-                <img class="invert" src="./assets/right-arrow.png" alt="">
+                <img  class="invert left-arrow" src="./assets/left-arrow.png" alt="">
+                <img class="invert right-arrow" src="./assets/right-arrow.png" alt="">
                 </div>
             </div>
             <div class="btn">
@@ -55,122 +58,87 @@
             </div>
         </div>
         <div class="spotifyPlaylists">
-            <h1>Spotify Playlists</h1>
+            <h1><span>Spotify</span> Playlists</h1>
             <div class="cardContainer">
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
                     <h2>Happy Hits!</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="songs" class="card">
+                    <div><img src="https://images.pexels.com/photos/761543/pexels-photo-761543.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
-                    <h2>Happy Hits!</h2>
+                    <h2>Romantic songs!</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/1136081/pexels-photo-1136081.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
-                    <h2>Happy Hits!</h2>
+                    <h2>Workout songs</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
-                    <h2>Happy Hits!</h2>
+                    <h2>Hip Hop songs</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/12924460/pexels-photo-12924460.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
-                    <h2>Happy Hits!</h2>
+                    <h2>English songs</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/12761185/pexels-photo-12761185.jpeg?auto=compress&cs=tinysrgb&w=1000"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
-                    <h2>Happy Hits!</h2>
+                    <h2>Happiness songs</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
-                    <h2>Happy Hits!</h2>
+                    <h2>Moody songs</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
-                    <h2>Happy Hits!</h2>
+                    <h2>Engergetic songs</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/2078008/pexels-photo-2078008.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
-                    <h2>Happy Hits!</h2>
+                    <h2>Cool songs</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/844928/pexels-photo-844928.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
-                    <h2>Happy Hits!</h2>
+                    <h2>Road trip songs</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/2034851/pexels-photo-2034851.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
-                    <h2>Happy Hits!</h2>
+                    <h2>Holiday songs</h2>
                     <p>Hits to boost your mood and fill you with happiness!</p>
                 </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
-                        <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
-                    </div>
-                    <h2>Happy Hits!</h2>
-                    <p>Hits to boost your mood and fill you with happiness!</p>
-                </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
-                        <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
-                    </div>
-                    <h2>Happy Hits!</h2>
-                    <p>Hits to boost your mood and fill you with happiness!</p>
-                </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
-                        <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
-                    </div>
-                    <h2>Happy Hits!</h2>
-                    <p>Hits to boost your mood and fill you with happiness!</p>
-                </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
-                        <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
-                    </div>
-                    <h2>Happy Hits!</h2>
-                    <p>Hits to boost your mood and fill you with happiness!</p>
-                </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
-                        <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
-                    </div>
-                    <h2>Happy Hits!</h2>
-                    <p>Hits to boost your mood and fill you with happiness!</p>
-                </div>
-                <div class="card">
-                    <div><img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"/>
+                <div data-folder="instaviral" class="card">
+                    <div><img src="https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&w=600"/>
                         <button class="btn"><img src="./assets/play-button-arrowhead.png"/></button>
                     </div>
                     <h2>Happy Hits!</h2>
@@ -192,6 +160,7 @@
             <img id="next" class="invert" src="./assets/next-button.png" alt="">
         </div>
         <div class="songtime"></div>
+    </div>
     </div>
     </div>
       </div>
